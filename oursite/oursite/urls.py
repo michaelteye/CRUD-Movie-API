@@ -26,6 +26,6 @@ urlpatterns = [
     path('movie/fantasy',Fantasy.as_view()),
     path('movie/romance',Romance.as_view()),
     path('movie/details/<int:pk>/',DetailView.as_view()),
-    path('movie/',ViewPage.as_view()),
+    path('movies/',ViewPage.as_view()),
     path('admin/', admin.site.urls),
 ]+static(settings.MEDIA_URL, document_root= settings.MEDIA_ROOT)
